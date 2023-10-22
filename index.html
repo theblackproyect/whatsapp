@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo de WhatsApp "The Black Project"</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
         /* Agrega tus estilos CSS personalizados aquí */
         body {
@@ -17,7 +17,6 @@
             padding: 20px;
         }
 
-
         .cta-button {
             background-color: #3498db;
             color: #fff;
@@ -27,10 +26,25 @@
             font-size: 20px;
             text-decoration: none;
             cursor: pointer;
+            position: relative;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
 
         .cta-button:hover {
             background-color: #1e87d5;
+            animation: none; /* Detiene la animación al hacer hover */
         }
     </style>
 </head>
@@ -40,12 +54,12 @@
         <div class="logo">
             <img src="tbp.png" style="width: 250px; margin: 0 auto;">
         </div>
-        <p style="font-family: 'Bebas Neue', sans-serif; font-size: 40px;">Acceso completo <span style="color: #00ff00;">100% gratuito</span>.</p>
+        <p style="font-family: 'Bebas Neue', sans-serif; font-size: 40px; margin: 0;">Acceso completo <span style="color: #00ff00;">100% gratuito</span>.</p>
         <p>Grupo de Whatsapp con las novedades de Marketing Digital</p>
         <p style="background-color: red;
-    padding-right: 5px;
-    padding-left: 5px; font-size: 20px; margin: 15px;">Inteligencia Artificial | Automatizaciones | Publicidad Online</p>
-<p>Recibe tu acceso usando la aplicación de <strong><span style="color: #00ccff;">TELEGRAM</span></strong> haciendo clic en el siguiente botón:</p>
+            padding-right: 5px;
+            padding-left: 5px; font-size: 20px; margin: 15px;">Inteligencia Artificial | Automatizaciones | Publicidad Online</p>
+        <p>Recibe tu acceso usando la aplicación de <strong><span style="color: #00ccff;">TELEGRAM</span></strong> haciendo clic en el siguiente botón:</p>
         <a href="enlace-a-tu-grupo-de-whatsapp" class="cta-button">Únete al Grupo de WhatsApp</a>
     </section>
 
